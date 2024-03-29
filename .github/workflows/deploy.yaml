@@ -1,24 +1,14 @@
 name: 'Deploy App to S3'
 on: 
-  push:
+    push:
       branches:
          - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
-      jobs:
-        deploy:
-         runs-on: ubuntu-latest
-      steps:
-    - name: Checkout code
-      run: actions/checkout@v2
-      if: success()
 
-# jobs:
-#   deployement: #juste un nom 
-#    runs-on: ubuntu-latest # provide temporary  ubuntu instance
-#      steps:  #
-#        - name: Checkout code
-#          run: echo "This is step 2" #actions/checkout@v4
-#              if: success()
-#        - name: Checkout code
-#          run: echo "This is step 3" #actions/checkout@v4
-#          if: always()
+jobs:
+ deployement: #juste un nom 
+  runs-on: ubuntu-latest # provide temporary  ubuntu instance
+  steps:  #
+  - name: Checkout code
+    run: actions/checkout@v4
+     
