@@ -1,7 +1,7 @@
 name: 'Deploy App to S3'
 on: 
-    push:
-      branches:
+  push:
+    branches:
          - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
 
@@ -11,4 +11,4 @@ jobs:
   steps:  #
   - name: Checkout code
     run: actions/checkout@v4
-    
+
