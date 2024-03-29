@@ -2,13 +2,13 @@ name: 'Deploy App to S3'
 on: 
   push:
     branches:
-         - second #Uniquement sur la branche main
+      - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
 
 jobs:
- deployement: #juste un nom 
-  runs-on: ubuntu-latest # provide temporary  ubuntu instance
-  steps:  #
-  - name: Checkout code
-    run: actions/checkout@v4
+  deployement: #juste un nom 
+    runs-on: ubuntu-latest # provide temporary  ubuntu instance
+    steps:  #
+    - name: Checkout code
+      uses: actions/checkout@v4
 
