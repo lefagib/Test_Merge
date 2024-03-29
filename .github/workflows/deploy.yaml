@@ -9,7 +9,7 @@ on:
     runs-on: ubuntu-latest
       steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      run: actions/checkout@v2
       if: success()
 
 # jobs:
