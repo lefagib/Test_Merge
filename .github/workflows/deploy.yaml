@@ -1,8 +1,8 @@
 name: 'Deploy App to S3'
 on: 
-push:
-    branches:
-      - second #Uniquement sur la branche main
+    push:
+      branches:
+         - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
 
 jobs:
