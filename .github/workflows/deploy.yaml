@@ -1,6 +1,6 @@
 name: 'Deploy App to S3'
 on: 
-    push:
+  push:
       branches:
          - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
