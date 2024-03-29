@@ -9,9 +9,9 @@ jobs:
  deployement: #juste un nom 
   runs-on: ubuntu-latest # provide temporary  ubuntu instance
   steps:  #
-  - name: Checkout code
-    run: echo "This is step 2" #actions/checkout@v4
+    - name: Checkout code
+      run: echo "This is step 2" #actions/checkout@v4
       if: success()
-  - name: Checkout code
+   - name: Checkout code
     run: echo "This is step 3" #actions/checkout@v4
       if: always()
