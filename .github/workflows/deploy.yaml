@@ -6,7 +6,7 @@ on:
       # Dans ce cas sur toutes les branches [push]
 
 jobs:
- deployement: #juste un nom 
+  deployement: #juste un nom 
    runs-on: ubuntu-latest # provide temporary  ubuntu instance
      steps:  #
        - name: Checkout code
