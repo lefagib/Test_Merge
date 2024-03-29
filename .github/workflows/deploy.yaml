@@ -4,9 +4,9 @@ on:
       branches:
          - second #Uniquement sur la branche main
       # Dans ce cas sur toutes les branches [push]
-  jobs:
-  deploy:
-    runs-on: ubuntu-latest
+      jobs:
+        deploy:
+          runs-on: ubuntu-latest
       steps:
     - name: Checkout code
       run: actions/checkout@v2
