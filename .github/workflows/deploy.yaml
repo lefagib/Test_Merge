@@ -10,5 +10,8 @@ jobs:
   runs-on: ubuntu-latest # provide temporary  ubuntu instance
   steps:  #
   - name: Checkout code
-    run: actions/checkout@v4
+    run: echo "This is step 2" #actions/checkout@v4
       if: success()
+  - name: Checkout code
+    run: echo "This is step 3" #actions/checkout@v4
+      if: always()
