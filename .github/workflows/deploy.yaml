@@ -17,6 +17,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y python3-pip
         sudo pip3 install awscli
+        
     - name: Configure
       run: |
         aws configure set aws_acces_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
