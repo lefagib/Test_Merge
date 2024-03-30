@@ -18,7 +18,7 @@ jobs:
         sudo apt-get install -y python3-pip
         sudo pip3 install awscli
     - name: Configure
-      run:
+      run: |
         aws configure set aws_acces_key_id ${{ secrets.AWS_ACCES_KEY_ID }}
         aws configure set aws_secret_acces_key ${{ secrets.AWS_SECRET_ACCES_KEY }}
         aws configure set region eu-west-3
