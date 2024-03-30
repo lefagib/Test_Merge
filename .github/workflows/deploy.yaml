@@ -11,7 +11,13 @@ jobs:
     steps:  #
     - name: Checkout code
       uses: actions/checkout@v4
-    # - name: List directory
+   
+    - name: install AWS CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip
+        sudo pip3 install awscli
+ # - name: List directory
     #   run: |
     #     ls -la
     # - name: create new file
@@ -20,8 +26,3 @@ jobs:
     # - name: List directory again
     #   run: |
     #     ls -la
-      - name: install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          sudo pip3 install awscli
