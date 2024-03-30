@@ -14,5 +14,7 @@ jobs:
     - name: List directory
       run: |
         ls -la
-    
+    - name: create new file
+      run: |
+        touch newfile.txt
 
