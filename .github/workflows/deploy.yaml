@@ -44,7 +44,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: notify me
-      uses: dawidd6/action-send-email@v2
+      uses: dawidd6/action-send-mail@v2
       with: 
         server_address: smtp.gmail.com
         server_port: 587
