@@ -43,6 +43,21 @@ jobs:
         AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: Notify me
+      uses: dawidd6/action-send-mail@v2
+      with:
+        server_address: smtp.gmail.com
+        server_port: 587 
+        username: ${{secrets.SMTP_USERNAME}}
+        password: ${{secrets.SMTP_PASSWORD}}
+        subject: Deployement notification
+        body: |
+          hello ,
+          your deployement was successfull
+
+          regards,
+          your github actions.
+        to: user@gmail.com
 
  # - name: List directory
     #   run: |
