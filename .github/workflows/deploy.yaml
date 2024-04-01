@@ -60,7 +60,7 @@ jobs:
           your github actions.
         to: user@gmail.com 
     - name: list Directory
-        run: |
+      run: |
         ls -la
 
 
